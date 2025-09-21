@@ -17,7 +17,7 @@
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <0 3 6>;
+        layers = <0 1 2 3 5>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -29,23 +29,13 @@
 
     /* input config for snipe mode */
 
-    trackball_snipe_listener {
-        compatible = "zmk,input-behavior-listener";
-        device = <&vtrackball>;
-        layers = <10>;
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-        scale-multiplier = <1>;
-        scale-divisor = <4>;
-    };
 
     /* input config for mouse scroll mode */
 
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <9>;
+        layers = <4>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
@@ -79,6 +69,16 @@
 
     combos {
         compatible = "zmk,combos";
+
+        rh_backticks {
+          bindings = <&kp EQUAL>;
+          key-positions = <10 11>;  
+        };
+
+        lh_caps {
+            bindings = <&kp CLCK>;
+            key-positions = <24 25>;
+        };
 
         lh_smallerThan {
             bindings = <&kp NUBS>;
@@ -160,10 +160,10 @@
 
         default_win_layer {
             bindings = <
-&kp ESCAPE      &kp N1               &kp N2           &kp N3           &kp N4             &kp N5            &kp N6       &kp N7              &kp N8            &kp N9            &kp N0                          &kp DE_SQT
-&kp TAB         &kp Q                &kp W            &kp E            &kp R              &kp T             &kp DE_Z     &kp U               &kp I             &kp O             &kp P                           &kp LEFT_BRACKET
+&mt ESCAPE GRAVE      &kp N1               &kp N2           &kp N3           &kp N4             &kp N5            &kp N6       &kp N7              &kp N8            &kp N9            &kp N0                          &kp DE_SQT
+&kp TAB         &kp Q                &kp W            &kp E            &kp R              &kp T             &kp Y     &kp U               &kp I             &kp O             &kp P                           &kp LEFT_BRACKET
 &kp DELETE      &kp A  &kp S  &kp D  &kp F           &kp G            &kp H              &kp J             &kp K        &kp L               &kp SEMI          &kp APOS
-&mt LS(8) LEFT_SHIFT  &lt 4 DE_Y           &kp X            &kp C            &kp V              &kp B             &kp N        &kp M               &kp COMMA         &kp PERIOD     &lt 4 MINUS                  &mt RS(9) RSHIFT
+&mt LEFT_SHIFT LS(NUMBER_8)  &lt 4 Z           &kp X            &kp C            &kp V              &kp B             &kp N        &kp M               &kp COMMA         &kp PERIOD     &lt 4 SLASH                  &mt RSHIFT RS(NUMBER_9) 
                                                       &lt 1 TAB        &mt LEFT_GUI SPACE &lt 2 ENTER    &lt 3 ENTER  &mt RALT BACKSPACE
                                                                        &kp LCTL          &kp LALT         &mo 5
             >;
@@ -175,7 +175,7 @@
             bindings = <
 &trans                        &trans                &trans                      &trans                              &trans                                &trans            &trans               &trans                  &trans                          &trans                           &trans                         &kp F12
 &trans                        &kt F1    &kp F2         &kp F3          &kp F4            &kp F5        &kp F6  &kp F7           &kp F8          &kp F9        &kp F10          &kp F11
-&trans                        &kt 1     &kp 2          &kp 3           &kp 4             &kp 5         &kp 6   &kp 7            &kp 8           &kp 9         &kp 0         &trans     
+&trans                        &kt N1     &kp N2        &kp N3        &kp N4              &kp N5        &kp N6  &kp N7           &kp N8          &kp N9        &kp N0         &trans     
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
                                 &trans  &trans    &trans
@@ -188,8 +188,8 @@
             bindings = <
 &trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp K_PREV  &kp K_PP  &kp K_NEXT &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp K_VOL_UP &kp K_MUTE  &kp K_VOL_DN    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp C_PREV  &kp C_PP  &kp C_NEXT &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp C_VOL_UP &kp C_MUTE  &kp C_VOL_DN    &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
                                 &trans  &trans    &trans
             >;
@@ -200,8 +200,8 @@
         naivgation_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp UP  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp UP  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT &trans &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
                                 &trans  &trans    &trans
