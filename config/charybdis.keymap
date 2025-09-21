@@ -91,7 +91,7 @@
         };
 
         asterisk {
-            bindings = <&kp BLSH>;
+            bindings = <&kp BSLH>;
             key-positions = <34 35>;
         };
 
