@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   QUERTZ:
-  - ESCAPE
+  - {t: '`', h: ESCAPE}
   - '1'
   - '2'
   - '3'
@@ -19,7 +19,7 @@ layers:
   - E
   - R
   - T
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Y))
+  - Y
   - U
   - I
   - O
@@ -37,8 +37,8 @@ layers:
   - L
   - ;
   - ''''
-  - {t: LEFT SHIFT, h: Sft+ 8}
-  - '&lt 4 (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z))'
+  - {t: Sft+ 8, h: LEFT SHIFT}
+  - {t: Z, h: SCROLL}
   - X
   - C
   - V
@@ -47,8 +47,8 @@ layers:
   - M
   - ','
   - .
-  - {t: '-', h: SCROLL}
-  - {t: RSHIFT, h: Sft+ 9}
+  - {t: /, h: SCROLL}
+  - {t: Sft+ 9, h: RSHIFT}
   - {t: TAB, h: NUMBERS}
   - {t: SPACE, h: LEFT GUI}
   - {t: ENTER, h: NAV-FUN}
@@ -186,6 +186,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -200,7 +201,6 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -266,16 +266,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -297,7 +297,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BOOT LDR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -343,6 +343,10 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
 combos:
+- p: [10, 11]
+  k: '='
+- p: [24, 25]
+  k: CLCK
 - p: [26, 27]
   k: NUBS
 - p: [27, 28]
