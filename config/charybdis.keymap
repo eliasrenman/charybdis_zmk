@@ -74,7 +74,7 @@
     // #define NUMBERS   1
     // #define NAV-FUN   2
     // #define SCROLL    9
-    // #define SCROLL   10
+    // #define NAVIG    10
     // #define FN       11
 
     combos {
