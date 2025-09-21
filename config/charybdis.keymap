@@ -89,7 +89,7 @@
             bindings = <&kp LS(NUBS)>,
             key-positions = <27 28>
         }
-        
+
         asterisk {
             bindings = <&kp BLSH>
             key-positions = <34 35>
@@ -125,6 +125,7 @@
             key-positions = <38 39 40>;
         };
 
+    }
 
     behaviors {
         hmr: hmr {
@@ -162,7 +163,7 @@
 &kp ESCAPE      &kp N1               &kp N2           &kp N3           &kp N4             &kp N5            &kp N6       &kp N7              &kp N8            &kp N9            &kp N0                          &kp DE_SQT
 &kp TAB         &kp Q                &kp W            &kp E            &kp R              &kp T             &kp DE_Z     &kp U               &kp I             &kp O             &kp P                           &kp LEFT_BRACKET
 &kp DELETE      &kp A  &kp S  &kp D  &kpT F           &kp G            &kp H              &kp J             &kp K        &kp L               &kp SEMI          &kp APOS
-&kp LEFT_SHIFT  &lt 9 DE_Y           &kp X            &kp C            &kp V              &kp B             &kp N        &kp M               &kp COMMA         &kp PERIOD     &lt 9 MINUS                  &kp RSHIFT
+&mt LS(8) LEFT_SHIFT  &lt 9 DE_Y           &kp X            &kp C            &kp V              &kp B             &kp N        &kp M               &kp COMMA         &kp PERIOD     &lt 9 MINUS                  &mt RS(9) RSHIFT
                                                       &lt 1 TAB        &mt LEFT_GUI SPACE &lt 2 ENTER    &lt 10 ENTER  &mt RALT BACKSPACE
                                                                        &mkp LCTL          &kp LALT         &mo 1
             >;
@@ -207,8 +208,9 @@
                                 &trans  &trans    &trans
             >;
 
-            label = "SCROLL";
+            label = "NAVIG";
         };
+
         scroll_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
