@@ -54,7 +54,7 @@ layers:
   - {t: ENTER, h: NAV-FUN}
   - {t: ENTER, h: NAVIG}
   - {t: BACK SPACE, h: RALT}
-  - '&mkp LCTL'
+  - LCTL
   - LALT
   - FN
   NUMBERS:
