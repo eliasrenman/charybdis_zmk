@@ -81,17 +81,17 @@
         compatible = "zmk,combos";
 
         lh_smallerThan {
-            bindings = <&kp NUBS>,
+            bindings = <&kp NUBS>;
             key-positions = <26 27>;
         };
        
         lh_greaterThan {
-            bindings = <&kp LS(NUBS)>,
+            bindings = <&kp LS(NUBS)>;
             key-positions = <27 28>;
         };
 
         asterisk {
-            bindings = <&kp BLSH>
+            bindings = <&kp BLSH>;
             key-positions = <34 35>;
         };
 
