@@ -125,7 +125,7 @@
             key-positions = <38 39 40>;
         };
 
-    }
+    };
 
     behaviors {
         hmr: hmr {
