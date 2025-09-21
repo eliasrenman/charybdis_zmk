@@ -165,7 +165,7 @@
 &kp DELETE      &kp A  &kp S  &kp D  &kp F           &kp G            &kp H              &kp J             &kp K        &kp L               &kp SEMI          &kp APOS
 &mt LS(8) LEFT_SHIFT  &lt 4 DE_Y           &kp X            &kp C            &kp V              &kp B             &kp N        &kp M               &kp COMMA         &kp PERIOD     &lt 4 MINUS                  &mt RS(9) RSHIFT
                                                       &lt 1 TAB        &mt LEFT_GUI SPACE &lt 2 ENTER    &lt 3 ENTER  &mt RALT BACKSPACE
-                                                                       &mkp LCTL          &kp LALT         &mo 5
+                                                                       &kp LCTL          &kp LALT         &mo 5
             >;
 
             label = "QUERTZ";
