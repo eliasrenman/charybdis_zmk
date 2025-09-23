@@ -164,8 +164,8 @@
 &kp TAB         &kp Q                &kp W            &kp E            &kp R              &kp T             &kp Y     &kp U               &kp I             &kp O             &kp P                           &kp LEFT_BRACKET
 &kp DELETE      &kp A  &kp S  &kp D  &kp F           &kp G            &kp H              &kp J             &kp K        &kp L               &kp SEMI          &kp APOS
 &mt LEFT_SHIFT LS(NUMBER_8)  &lt 4 Z           &kp X            &kp C            &kp V              &kp B             &kp N        &kp M               &kp COMMA         &kp PERIOD     &lt 4 SLASH                  &mt RSHIFT RS(NUMBER_9) 
-                                                      &lt 1 TAB        &mt LEFT_GUI SPACE &lt 2 ENTER    &lt 3 ENTER  &mt RALT BACKSPACE
-                                                                       &kp LCTL          &kp LALT         &mo 5
+                                                      &kp TAB        &mt LEFT_GUI SPACE &lt 2 ENTER    &lt 3 ENTER  &mt RALT BACKSPACE
+                                                                       &kp LCTL          &lt 1 LALT         &lt 5 SPACE
             >;
 
             label = "QUERTZ";

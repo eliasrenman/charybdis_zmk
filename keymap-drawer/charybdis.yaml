@@ -49,14 +49,14 @@ layers:
   - .
   - {t: /, h: SCROLL}
   - {t: Sft+ 9, h: RSHIFT}
-  - {t: TAB, h: NUMBERS}
+  - TAB
   - {t: SPACE, h: LEFT GUI}
   - {t: ENTER, h: NAV-FUN}
   - {t: ENTER, h: NAVIG}
   - {t: BACK SPACE, h: RALT}
   - LCTL
-  - LALT
-  - FN
+  - {t: LALT, h: NUMBERS}
+  - {t: SPACE, h: FN}
   NUMBERS:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -106,13 +106,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NAV-FUN:
   - {t: ▽, type: trans}
