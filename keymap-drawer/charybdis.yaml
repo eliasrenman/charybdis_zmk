@@ -292,8 +292,10 @@ combos:
   k: CLCK
 - p: [26, 27]
   k: NUBS
+  l: [QUERTZ, SCROLL]
 - p: [27, 28]
   k: Sft+ NUBS
+  l: [QUERTZ, SCROLL]
 - p: [34, 35]
   k: \
 - p: [43, 44]

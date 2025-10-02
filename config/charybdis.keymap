@@ -82,11 +82,13 @@
         lh_smallerThan {
             bindings = <&kp NUBS>;
             key-positions = <26 27>;
+            layers = <0 3>;
         };
        
         lh_greaterThan {
             bindings = <&kp LS(NUBS)>;
             key-positions = <27 28>;
+            layers = <0 3>;
         };
 
         asterisk {
