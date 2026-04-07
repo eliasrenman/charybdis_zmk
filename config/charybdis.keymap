@@ -75,7 +75,7 @@
         };
 
         rh_tilde {
-          bindings = <&kp CARET>;
+          bindings = <&kp TILDE>;
           key-positions = <22 23>;  
         };
 
