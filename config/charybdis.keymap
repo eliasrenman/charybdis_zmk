@@ -74,6 +74,11 @@
           key-positions = <10 11>;  
         };
 
+        rh_tilde {
+          bindings = <&kp CARET>;
+          key-positions = <22 23>;  
+        };
+
         lh_caps {
             bindings = <&kp CLCK>;
             key-positions = <24 25>;
