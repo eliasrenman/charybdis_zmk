@@ -75,7 +75,7 @@
         };
 
         rh_tilde {
-          bindings = <&kp TILDE>;
+          bindings = <&kp RIGHT_BRACKET>;
           key-positions = <22 23>;  
         };
 
